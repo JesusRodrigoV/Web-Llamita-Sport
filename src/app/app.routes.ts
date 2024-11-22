@@ -1,9 +1,10 @@
 import { Routes } from '@angular/router';
-import { HeaderComponent } from './header/header.component'
-import { HomeComponent } from './home/home.component';
-import { InventarioComponent } from './inventario/inventario.component';
-import { PedidosComponent } from './pedidos/pedidos.component';
-import { ContactosComponent } from './contactos/contactos.component';
+import { HeaderComponent } from './shared/UI/header/header.component'
+import { HomeComponent } from './shared/UI//home/home.component';
+import { InventarioComponent } from './shared/UI//inventario/inventario.component';
+import { PedidosComponent } from './shared/UI//pedidos/pedidos.component';
+import { ContactosComponent } from './shared/UI//contactos/contactos.component';
+
 
 export const routes: Routes = [
   { path: '', component: HomeComponent},
