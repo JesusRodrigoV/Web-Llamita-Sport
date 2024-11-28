@@ -2,46 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
+:root {
   color-scheme: dark light;
 }
 
-body{
+body {
   @apply bg-black;
-  font-family: 'Roboto', sans-serif;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('/assets/fonts/Montserrat-Regular.ttf') format('truetype'),
-       url('/assets/fonts/Montserrat-Bold.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('/assets/fonts/Montserrat-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
+  font-family: "Roboto";
+  src: url("/assets/fonts/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.ttf') format('truetype'),
-       url('/assets/fonts/Roboto-Bold.ttf') format('truetype');
-  font-weight: 400;
+  font-family: 'Parkinsans';
+  src: url('/assets/fonts/Parkinsans-Regular.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
+.otro {
+  font-family: 'Parkinsans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8 {
+  font-family: "Montserrat", sans-serif;
 }
 
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.raro {
+  font-family: "EduAUVICWANTArrows", sans-serif;
+}

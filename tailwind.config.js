@@ -6,7 +6,9 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
+        otro: ["Parkinsans", "sans-serif"],
         heading: ["Montserrat", "sans-serif"],
+        raro:['EduAUVICWANTArrows', "sans-serif"]
       },
     },
   },
