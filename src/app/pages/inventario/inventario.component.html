@@ -1,145 +1,28 @@
 <app-header></app-header>
 <div class="inventory-container">
     <h1>Gestión de Inventario</h1>
-  
-    <button class="btn add-btn">Agregar Nuevo Producto</button>
-  
+
+    <button class="btn add-btn" routerLink="/form-producto">Agregar Nuevo Producto</button>
+
     <div class="product-grid">
-      <div class="product-card">
-        <img src="assets/man.jpg" alt="Producto 1">
-        <h2>Producto 1</h2>
-        <p class="price">$25.00</p>
-        <p class="description">D....</p>
+
+      <div class="product-card"*ngFor="let product of products">
+        <img src="assets/man.jpg">
+        <h2>{{ product.nombre}}</h2>
+        <p class="price">{{product.precio}}</p>
+        <!-- <p class="description">D....</p> -->
         <div class="actions">
-          <button class="btn edit-btn">Editar</button>
-          <button class="btn delete-btn">Eliminar</button>
-        </div>
-      </div>
-  
-      <div class="product-card">
-        <img src="assets/woman.jpg" alt="Producto 2">
-        <h2>Producto 2</h2>
-        <p class="price">$30.00</p>
-        <p class="description">De.o.</p>
-        <div class="actions">
-          <button class="btn edit-btn">Editar</button>
-          <button class="btn delete-btn">Eliminar</button>
-        </div>
-      </div>
-  
-      
-      <div class="product-card">
-        <img src="assets/kid.jpg" alt="Producto 3">
-        <h2>Producto 3</h2>
-        <p class="price">$15.00</p>
-        <p class="description">D...</p>
-        <div class="actions">
-          <button class="btn edit-btn">Editar</button>
-          <button class="btn delete-btn">Eliminar</button>
+          <button class="btn edit-btn" (click)="updateProduct(product)">Editar</button>
+          <button class="btn delete-btn" (click)="deleteProduct(product.id)">Eliminar</button>
         </div>
       </div>
 
-      <div class="product-card">
-        <img src="assets/lsleeve.jpg" alt="Producto 4">
-        <h2>Producto 4</h2>
-        <p class="price">$15.00</p>
-        <p class="description">Este producto....</p>
-        <div class="actions">
-          <button class="btn edit-btn">Editar</button>
-          <button class="btn delete-btn">Eliminar</button>
-        </div>
-      </div>
 
-      <div class="product-card">
-        <img src="assets/womentop.jpg" alt="Producto 5">
-        <h2>Producto 5</h2>
-        <p class="price">$15.00</p>
-        <p class="description">Este producto....</p>
-        <div class="actions">
-          <button class="btn edit-btn">Editar</button>
-          <button class="btn delete-btn">Eliminar</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/producto6.jpg" alt="Producto 6">
-        <h2>Producto 6</h2>
-        <p class="price">$15.00</p>
-        <p class="description">Este producto....</p>
-        <div class="actions">
-          <button class="btn edit-btn">Editar</button>
-          <button class="btn delete-btn">Eliminar</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/producto7.jpg" alt="Producto 7">
-        <h2>Producto 7</h2>
-        <p class="price">$15.00</p>
-        <p class="description">Este producto....</p>
-        <div class="actions">
-          <button class="btn edit-btn">Editar</button>
-          <button class="btn delete-btn">Eliminar</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/producto8.jpg" alt="Producto 8">
-        <h2>Producto 8</h2>
-        <p class="price">$15.00</p>
-        <p class="description">Este producto....</p>
-        <div class="actions">
-          <button class="btn edit-btn">Editar</button>
-          <button class="btn delete-btn">Eliminar</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/producto9.jpg" alt="Producto 9">
-        <h2>Producto 9</h2>
-        <p class="price">$15.00</p>
-        <p class="description">Este producto....</p>
-        <div class="actions">
-          <button class="btn edit-btn">Editar</button>
-          <button class="btn delete-btn">Eliminar</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/producto10.jpg" alt="Producto 10">
-        <h2>Producto 10</h2>
-        <p class="price">$15.00</p>
-        <p class="description">Este producto....</p>
-        <div class="actions">
-          <button class="btn edit-btn">Editar</button>
-          <button class="btn delete-btn">Eliminar</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/producto11.jpg" alt="Producto 11">
-        <h2>Producto 11</h2>
-        <p class="price">$15.00</p>
-        <p class="description">Este producto....</p>
-        <div class="actions">
-          <button class="btn edit-btn">Editar</button>
-          <button class="btn delete-btn">Eliminar</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="assets/producto12.jpg" alt="Producto 12">
-        <h2>Producto 12</h2>
-        <p class="price">$15.00</p>
-        <p class="description">Este producto....</p>
-        <div class="actions">
-          <button class="btn edit-btn">Editar</button>
-          <button class="btn delete-btn">Eliminar</button>
-        </div>
-      </div>
-  
-      
     </div>
+
+
+
+
   </div>
-  
+
   <app-footer></app-footer>

@@ -1,19 +1,69 @@
 <app-header></app-header>
-<div class="gallery">
-    <div class="gallery-item">
-      <img src="assets/images/man.jpg" alt="ropaHombre">
+<div class="home-container">
+  <!-- Sección de bienvenida -->
+  <section class="welcome-section">
+    <h1 class="welcome-title">¡Bienvenido a Llamita Sport!</h1>
+    <p class="welcome-text">
+      Descubre nuestra colección de ropa deportiva diseñada para hombres, mujeres y niños. Calidad, confort y estilo para todos tus entrenamientos.
+    </p>
+    <button class="shop-now-btn" routerLink="/inventario">Explorar Colección</button>
+  </section>
+
+  <!-- Sección de galería -->
+  <section class="gallery">
+    <h2 class="section-title">Galería de Productos</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="../../assets/images/man.jpg" alt="Ropa para Hombre">
+        <p>Ropa para Hombre</p>
+      </div>
+      <div class="gallery-item">
+        <img src="../../assets/images/kid.jpg" alt="Ropa para Niños">
+        <p>Ropa para Niños</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/woman.jpg" alt="Ropa para Mujer">
+        <p>Ropa para Mujer</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/lsleeve.jpg" alt="Manga Larga Hombre">
+        <p>Manga Larga Hombre</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/womentop.jpg" alt="Top para Mujer">
+        <p>Top para Mujer</p>
+      </div>
     </div>
-    <div class="gallery-item">
-      <img src="assets/images/kid.jpg" alt="ropaNino">
+  </section>
+
+  <!-- Sección de promociones -->
+  <section class="promotion-section">
+    <h2 class="section-title">Promociones Exclusivas</h2>
+    <div class="promotion">
+      <p>¡Consigue un <strong>20% de descuento</strong> en tu primera compra!</p>
     </div>
-    <div class="gallery-item">
-      <img src="assets/images/woman.jpg" alt="ropaMujer">
+  </section>
+
+  <!-- Sección de productos destacados -->
+  <section class="featured-products">
+    <h2 class="section-title">Productos Destacados</h2>
+    <div class="featured-grid">
+      <div class="product-item">
+        <img src="../../assets/images/featured1.jpg" alt="Producto 1">
+        <p>Sudadera Deportiva</p>
+        <span class="price">Bs. 120</span>
+      </div>
+      <div class="product-item">
+        <img src="../../assets/images/featured2.jpg" alt="Producto 2">
+        <p>Conjunto Deportivo</p>
+        <span class="price">Bs. 200</span>
+      </div>
+      <div class="product-item">
+        <img src="../../assets/images/featured3.jpg" alt="Producto 3">
+        <p>Camiseta Running</p>
+        <span class="price">Bs. 90</span>
+      </div>
     </div>
-    <div class="gallery-item">
-      <img src="assets/images/lsleeve.jpg" alt="mangaLargaHombre">
-    </div>
-    <div class="gallery-item">
-      <img src="assets/images/womentop.jpg" alt="topMujer">
-    </div>
-  </div>
+  </section>
+</div>
 <app-footer></app-footer>
